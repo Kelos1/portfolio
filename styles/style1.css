@@ -76,7 +76,7 @@ img {
 }
 
 .hero .container {
-  background: url("../Hero.png") no-repeat;
+  background: url("../images/hero.png") no-repeat;
   background-size: contain;
   background-position: center bottom;
   height: 550px;
@@ -233,6 +233,10 @@ img {
   margin: 20px 200px 150px;
 }
 
+.projects .project_1 .project-text .link {
+  color: blue;
+}
+
 .projects .project_2 .project-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -276,6 +280,24 @@ img {
 
 .projects .project_3 .project-text {
   margin: 20px 200px 150px;
+}
+
+/* About Me */
+.about-me {
+  margin-bottom: 50px;
+}
+
+.about-me .container {
+  height: 550px;
+}
+
+.about-me .container .content {
+  width: 80%;
+}
+
+.about-me .text {
+  width: 70%;
+  margin-bottom: 20px;
 }
 
 /* Footer */
