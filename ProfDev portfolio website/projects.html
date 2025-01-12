@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Loek Apenhorst</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles/style1.css" />
+    <link rel="shortcut icon" href="images/tab_icon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo.png" alt="logo" />
+          </a>
+        </div>
+        <div class="main-menu">
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="about_me.html">About Me</a>
+            </li>
+            <li>
+              <a href="projects.html">Projects</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+            <li>
+              <a class="btn" href="#"> <i class="fas fa-user"></i> Log In </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Hamburger Button -->
+        <button class="hamburger-button">
+          <div class="hamburger-line"></div>
+          <div class="hamburger-line"></div>
+          <div class="hamburger-line"></div>
+        </button>
+        <div class="mobile-menu">
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="about_me.html">About Me</a>
+            </li>
+            <li>
+              <a href="projects.html">Projects</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+            <li>
+              <a class="btn" href="#"> <i class="fas fa-user"></i> Log In </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--Projects -->
+    <div class="projects">
+      <div class="container">
+        <div class="projects-flex">
+          <div class="project_1">
+            <h1 class="project-heading text-xl">Sim pedals - Part one</h1>
+            <div class="project-grid">
+              <video
+                class="video_1"
+                loop
+                controls
+                src="images/Animation Onshape.mp4"
+              ></video>
+              <video
+                class="video_2"
+                controls
+                src="images/Timelapse Onshape.mp4"
+              ></video>
+            </div>
+            <p class="project-text">
+              This 3d model of sim pedals was made in Onshape, a browers based
+              CAD program with possibilities to collaborate with others in real
+              time. To run this program you do not need a very powerfull pc,
+              because onshape handles most work on their side. Switching to
+              Onshape from another cad software is very doable within a few
+              hours. It already showed to be usefull during module 3 when thanks
+              to Onshape the entire project group was able to show and edit the
+              3D model of the projects casing.
+            </p>
+            <h1 class="project-heading text-xl">Sim pedals - Part two</h1>
+            <div class="project-grid">
+              <!---->
+            </div>
+            <p class="project-text">
+              Part two of the sim pedals is the building of the actual pedals
+              and combining it with the elctronics. The electronics consist of
+              an arduino pro micro, which has an ATmega32u4 chip that allows it
+              to be recognized as a (game)controller, and 3 potentiometers (one
+              for each pedal). When pressing the pedal the potentiometer turns
+              and the arduino communicates these values to the computer.
+              <!---->
+              The pedals themselves are 3d printed based on the (edited) model
+              from part one. The spring in the pedals is also 3D printed, the
+              only non-printed parts are the bolts holding everything together.
+              The pedals are made out of multiple smaller parts to be able to
+              prototype fast and replace parts if necessary.
+              <!---->
+              Link to the online and live updated 3D model:
+              <a
+                class="link"
+                href="https://cad.onshape.com/documents/329a02bde58244ac22c174fb/w/b3f4f369065ba74110d13288/e/66a2901c55791581a9fdd19d?renderMode=0&uiState=666b66d1b2790032a692d8c9"
+                >Click Here.</a
+              >
+            </p>
+          </div>
+          <a id="project_2"></a>
+          <div class="project_2">
+            <h1 class="project-heading text-xl">3D printer</h1>
+            <div class="project-grid">
+              <img class="img_1" src="images/printer 1.png" />
+              <img class="img_2" src="images/printer 2.png" />
+            </div>
+            <p class="project-text">
+              This 3D printer is self build, it is connected to a raspberry pi
+              and is therefore accessible through the internet. The base of the
+              printer is a cr-10s frame with dual z-screws. The powersupply and
+              heated bed are also from a cr-10s. The printhead is printed with
+              another printer and the motherboard was replaced with a 32 bit
+              version. I changed the firmware to make it work with the new
+              motherboard and the self build printer. When everything was
+              working I added a raspberry pi with Octoprint to control the
+              printer remotely.
+            </p>
+          </div>
+          <a id="project_3"></a>
+          <div class="project_3">
+            <h1 class="project-heading text-xl">AI cooking assistant</h1>
+            <div class="project-grid">
+              <img class="img_1" src="images/gordon.png" />
+            </div>
+            <p class="project-text">
+              This AI cooking assistant is powered by AiCall's AI technology and
+              interacts with you trough speech to text and text to speech. The
+              product (named Gordon) is a 3D printed housing with a raspberry pi
+              inside, it runs an adjusted version of AiCall's code and is
+              triggered by a motion sensor on the bottom. The user can ask
+              Gordon all sort of kitchen related questions, such as: "Hey,
+              Gordon. Can you provide me 3 pasta recipes, keep in mind that they
+              have to be vegetarian." or "Hey, Gordon. How should I use my Miele
+              oven and what should the temperature be according to the recipe?"
+            </p>
+          </div>
+        </div>
+        <a id="project_4"></a>
+        <div class="project_4">
+          <h1 class="project-heading text-xl">LinkedIn profile</h1>
+          <div class="project-grid">
+            <img class="img_1" src="images/LinkedIn1.png" />
+            <img class="img_2" src="images/LinkedIn2.png" alt="Goodhabitz course image (https://goodhabitz.com)" />
+            <p>Goodhabitz course image (<a href="https://goodhabitz.com">https://goodhabitz.com</a>)</p>
+          </div>
+          <p class="project-text">
+            During the first module of my second year as a Creative Technology student I decided to explore the making of a LinkedIn profile. 
+            I started by following the LinkedIn goodhabitz course that was available through my university. 
+            After this I had a proper understanding of what a LinkedIn profile should look like and how you set it up in a way that is most appealing to other users.
+            I made my own profile and started to contecting to my 1st order connections to make sure I have a good base profile to work uppon and expand my network.
+            For the link to my LinkedIn see the footer.
+          </p>
+        </div>
+        <a id="project_5"></a>
+                <div class="project_5">
+                  <div class="project-grid">
+          <h1 class="project-heading text-xl">After CreaTe</h1>
+          <p class="project-text">
+            For my second project in year two I worked together with a fellow student to make a flowchart to broaden our view on the possibilities after Creative Technology. This flowchart can also be used by any other CreaTe student to discover what master and possibly job would fit after their studies and based on their interests. To view the flowchart <a class="link" href="https://miro.com/welcomeonboard/bHZ1MDZqS2V4c05VZzU2QVRWVlp1TGNrM0dqcTJ1TE5GMzI2QlpjaUxCUVVwbDN1VkJOUUc2bW1xRERMcUZ1SEllc053NFczZ3c0QTF1a3VneUNJdWdldnRuQmlVQU1OSDZMMW1zdUZuMExzZXhFM3V4MVJQZ243MThidGR6M3ghZQ==?share_link_id=90130803222">Click Here</a>. 
+          </p>
+        </div>
+      </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-black">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="logo">
+            <a href="index.html">
+              <img src="images/logo.png" alt="logo" />
+            </a>
+          </div>
+          <div>
+            <h4>Me</h4>
+            <ul>
+              <li><a href="about_me.html">About Me</a></li>
+              <li>
+                <a href="https://www.linkedin.com/in/loek-creativetechnology">LinkedIn
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>Projects</h4>
+            <ul>
+              <li><a href="projects.html">CAD sim pedals</a></li>
+              <li><a href="projects.html#project_2">3D printer</a></li>
+              <li>
+                <a href="projects.html#project_3">AI cooking assistant</a>
+              </li>
+              <li><a href="projects.html#project_4">LinkedIn profile</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Contact</h4>
+            <ul>
+              <li>
+                <a href="contact.html">Contact Form</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
