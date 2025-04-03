@@ -325,6 +325,22 @@ img {
   color: blue;
 }
 
+.projects .project_6 .project-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.projects .project_6 .project-heading {
+  text-align: center;
+}
+
+.projects .project_6 .project-text {
+  margin: 20px 200px 150px;
+}
+
 /* About Me */
 .about-me {
   margin-bottom: 50px;
